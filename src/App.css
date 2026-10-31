@@ -1,0 +1,144 @@
+
+.navbar {
+  width: 100%;
+  min-height: 90px;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f5ef;
+  border-bottom: 1px solid #e9e2d8;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #493b32;
+}
+
+.brand-name {
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.brand-tagline {
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-top: 4px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #62574e;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #a17c61;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: #493b32;
+}
+
+@media (max-width: 850px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: #f8f5ef;
+    flex-direction: column;
+    gap: 22px;
+    z-index: 10;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Homepage hero */
+
+.home-page {
+  min-height: 80vh;
+  padding: 80px 7%;
+  display: flex;
+  align-items: center;
+  background: var(--cream);
+}
+
+.hero {
+  max-width: 750px;
+}
+
+.hero-label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--taupe);
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 7vw, 82px);
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  max-width: 480px;
+  color: #75675c;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.hero-button {
+  padding: 16px 30px;
+  border: 1px solid var(--espresso);
+  background: var(--espresso);
+  color: var(--white);
+  font-size: 11px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background: transparent;
+  color: var(--espresso);
+}
+
+.placeholder-page {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--ivory);
+  padding: 40px;
+}
+
+.placeholder-page h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
